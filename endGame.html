@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../Imagens_PP/decode.png">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,7 +14,7 @@
             padding: 0;
         }
 
-        .lost-container {
+        .won-container {
             text-align: center;
             margin-top: 50px;
             padding: 20px;
@@ -21,13 +23,8 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .sad-face {
-            font-size: 50px;
-            margin-bottom: 20px;
-        }
-
-        .message {
-            color: #f44336;
+        .congratulations {
+            color: #4caf50;
             font-size: 18px;
             font-weight: bold;
             margin-top: 20px;
@@ -37,14 +34,14 @@
             margin-top: 20px;
             padding: 10px 20px;
             font-size: 16px;
-            background-color: #f44336;
+            background-color: #4caf50;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
             cursor: pointer;
         }
-        
-        .back-to-index:hover{
+
+        .back-to-index:hover {
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
             transform: translateY(3px);
         }
@@ -59,27 +56,22 @@
             padding: 10px;
         }
     </style>
-    <title>Você Perdeu</title>
+    <title>Parabéns!</title>
 </head>
+
 <body>
-    <div class="lost-container">
-        <div class="sad-face">:(</div>
-        <h1>Oh não, <span id="playerName"></span>!</h1>
-        <p>Você não conseguiu concluir o desafio desta vez.</p>
-        <p class="message">Não desanime, continue tentando!</p>
-        <a href="index.html" class="back-to-index">Voltar para o Início</a>
+    <div class="won-container">
+        <h1>Parabéns, <span id="playerName"></span>!</h1>
+        <p>Pontuação: <span id="playerScore"></span></p>
+        <p class="congratulations">Você concluiu o desafio com sucesso! Pegue seu prêmio!!</p>
+        <button id="restart" class="restart">Voltar para o Início</button>
+        <button id="tryAgain" class="restart">Tentar Novamente</button>;
+        <ul id="ranking">
+        </ul>
     </div>
 
-    <footer>
-        <p>Desenvolvido por Diogo Leal - 1° Semestre &copy; 2023</p>
-    </footer>
 
-    <script>
-        // Recuperar nome do jogador do armazenamento local
-        var playerName = localStorage.getItem('playerName');
+    <script type="module" src="./src/scripts/endGame.js"></script>
+</body> -->
 
-        // Atualizar o elemento HTML com o nome do jogador
-        document.getElementById('playerName').textContent = playerName;
-    </script>
-</body>
 </html>
