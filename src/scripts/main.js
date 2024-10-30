@@ -14,7 +14,7 @@ document.getElementById('playerName').textContent = localStorage.getItem('player
 // Variáveis do jogo
 const playerName = localStorage.getItem("playerName");
 
-// let timeLeft = 15;
+let timeLeft = 15;
 let totalQuestions = 0;
 let currentQuestions = [];
 let currentQuestionIndex = 0;
