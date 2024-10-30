@@ -2,205 +2,119 @@
 const data = {
     questions: [
         {
-            image: '../Imagens_PP/alanturing.jpg',
             question: 'O que faz os desenvolvedores Web?',
-            answers: ['Criam Sites', 'Criam apps para celulares', 'Cuidam da segurança da rede', 'Trabalham com redes sociais'],
+            answers: ['Criam sites', 'Criam apps para celulares', 'Cuidam da segurança da rede', 'Trabalham com redes sociais'],
             correctAnswer: 'Criam sites'
         },
         {
-            image: '../Imagens_PP/billgates.jpg',
-            question: 'Quem criou o Sistema Operacional Windows?',
-            answers: ['Linus Torvalds', 'Bill Gates', 'Steve Jobs', 'Mark Zuckerberg'],
-            correctAnswer: 'Bill Gates'
+            question: 'Qual curso de graduação seria mais indicado para alguém interessado em construir aplicações robustas e seguras para a internet?',
+            answers: ['Engenharia de Software', 'Sistemas de Informação', 'Ciência da Computação', 'Redes de Computadores'],
+            correctAnswer: 'Engenharia de Software'
         },
         {
-            image: '../Imagens_PP/amd.jpg',
-            question: 'O que significa AMD?',
-            answers: ['American Micro Devices', 'Advanced Micro Devices', 'All Modern Devices', 'Association of Micro Devices'],
-            correctAnswer: 'Advanced Micro Devices'
+            question: 'Em qual dessas profissões um profissional é mais provavelmente responsável por proteger dados sensíveis de ataques cibernéticos?',
+            answers: ['Engenheiro de Dados', 'Arquiteto de Software', 'Administrador de Redes', 'Especialista em Segurança da Informação'],
+            correctAnswer: 'Especialista em Segurança da Informação'
         },
         {
-            image: '../Imagens_PP/cpu.jpg',
-            question: 'O que significa CPU?',
-            answers: ['Central Processing Unit', 'Computer Peripheral Unit', 'Central Power Unit', 'Computer Programming Utility'],
-            correctAnswer: 'Central Processing Unit'
+            question: 'Qual dessas áreas é mais relacionada com a criação e gestão de bancos de dados complexos?',
+            answers: ['Engenharia de Computação', 'Ciência de Dados', 'Análise de Sistemas', 'Administração de Banco de Dados'],
+            correctAnswer: 'Administração de Banco de Dados'
         },
         {
-            image: '../Imagens_PP/placadevideo.jpg',
-            question: 'O que significa GPU?',
-            answers: [' General Purpose Unit', 'Graphics Processing Unit', 'Global Positioning Unit', 'General Product Utilization'],
-            correctAnswer: 'Graphics Processing Unit'
+            question: 'Qual curso de especialização seria ideal para quem deseja trabalhar com aprendizagem de máquina e algoritmos inteligentes?',
+            answers: ['Desenvolvimento Mobile', 'Redes de Computadores', 'Inteligência Artificial', 'Engenharia de Software'],
+            correctAnswer: 'Inteligência Artificial'
         },
         {
-            image: '../Imagens_PP/boolean-pog.jpg',
-            question: 'Qual lógica foi criada por George Boole?',
-            answers: ['Lógica de Aristóteles', 'Lógica Binária', 'Lógica Difusa', 'Lógica Booleana'],
-            correctAnswer: 'Lógica Booleana'
+            question: 'O que faz um Analista de Suporte?',
+            answers: ['Desenvolve novos softwares', 'Resolve problemas técnicos e oferece suporte aos usuários', 'Gerencia redes sociais da empresa', 'Elabora planos de marketing'],
+            correctAnswer: 'Resolve problemas técnicos e oferece suporte aos usuários'
         },
         {
-            image: '../Imagens_PP/primeiragpu.jpg',
-            question: 'Quando foi lançada a primeira GPU?',
-            answers: ['1980', '1995', '2005', '1972'],
-            correctAnswer: '1972'
+            question: 'Qual a principal habilidade de um Desenvolvedor Full Stack?',
+            answers: ['Trabalhar com o front-end e o back-end de uma aplicação', 'Criar interfaces gráficas para aplicativos', 'Configurar redes e servidores', 'Garantir a segurança dos sistemas'],
+            correctAnswer: 'Trabalhar com o front-end e o back-end de uma aplicação'
         },
         {
-            image: '../Imagens_PP/valesilicio.jpg',
-            question: 'Onde fica o maior polo de tecnologia do mundo?',
-            answers: ['Vale do Silício, Califórnia', 'Tóquio, Japão', 'Londres, Reino Unido', 'Nova Iorque, EUA'],
-            correctAnswer: 'Vale do Silício, Califórnia'
+            question: 'O que significa a sigla “DevOps”?',
+            answers: ['Desenvolvimento e Operações', 'Desenvolvimento de Softwares Corporativos', 'Desenvolvimento Orientado a Processos', 'Design e Operações'],
+            correctAnswer: 'Desenvolvimento e Operações'
         },
         {
-            image: '../Imagens_PP/fugaku.jpg',
-            question: 'Qual o computador mais potente do mundo?',
-            answers: ['Apple MacBook Air', 'IBM PC XT', 'Supercomputador Fugaku', 'Compaq Presario'],
-            correctAnswer: 'Supercomputador Fugaku'
+            question: 'O que é um estágio em TI?',
+            answers: ['Um emprego temporário para ganhar experiência prática', 'Uma certificação técnica em tecnologia', 'Um curso de curta duração em informática', 'Uma atividade recreativa em empresas de tecnologia'],
+            correctAnswer: 'Um emprego temporário para ganhar experiência prática'
         },
         {
-            image: '../Imagens_PP/patinhofeio.jpg',
-            question: 'Qual o nome do primeiro computador totalmente brasileiro?',
-            answers: [' CCE-7100', 'Patinho Feio', 'Sempron 64', 'O Pinguim'],
-            correctAnswer: 'Patinho Feio'
+            question: 'Qual é a função de um recrutador técnico?',
+            answers: ['Avaliar apenas o comportamento dos candidatos', 'Identificar e contratar profissionais com habilidades específicas de TI', 'Gerenciar a equipe de desenvolvimento de software', 'Realizar treinamentos técnicos para a equipe de TI'],
+            correctAnswer: 'Identificar e contratar profissionais com habilidades específicas de TI'
         },
         {
-            image: '../Imagens_PP/cooler.jpg',
-            question: 'Para que serve o Cooler?',
-            answers: ['Para aquecer o computador', 'Para aumentar a luminosidade do monitor', 'Para resfriar componentes, como o processador', 'Para refrigerar bebidas'],
-            correctAnswer: 'Para resfriar componentes, como o processador'
+            question: 'Qual área é responsável por desenvolver a interface visual de um site?',
+            answers: ['Back-end', 'Front-end', 'Banco de Dados', 'DevOps'],
+            correctAnswer: 'Front-end'
         },
         {
-            image: '../Imagens_PP/html.jpg',
-            question: 'O que significa a sigla HTML?',
-            answers: ['HyperText Markup Language', 'High-Tech Multimedia Language', 'Human Technology Management Language', ' Hardware and Tools Markup Language'],
-            correctAnswer: 'HyperText Markup Language'
+            question: 'O que um Analista de Dados faz?',
+            answers: ['Analisa e interpreta dados para decisões estratégicas', 'Trabalha com redes de computadores', 'Desenvolve jogos', 'Escreve código para sistemas operacionais'],
+            correctAnswer: 'Analisa e interpreta dados para decisões estratégicas'
         },
         {
-            image: '../Imagens_PP/android.jpg',
-            question: 'Qual empresa é conhecida por desenvolver o sistema operacional Android?',
-            answers: ['Apple', 'Google', 'Microsoft', 'Samsung'],
-            correctAnswer: 'Google'
+            question: 'Qual curso é ideal para quem quer trabalhar com redes de computadores?',
+            answers: ['Engenharia de Software', 'Sistemas de Informação', 'Ciência de Dados', 'Redes de Computadores'],
+            correctAnswer: 'Redes de Computadores'
         },
         {
-            image: '../Imagens_PP/url.jpg',
-            question: 'O que significa URL?',
-            answers: ['Uniform Resource Locator', 'Universal Remote Link', 'User Registration Language', 'Ultra Rapid Loading'],
-            correctAnswer: 'Uniform Resource Locator'
+            question: 'Qual das áreas a seguir é mais focada na criação de apps para celulares?',
+            answers: ['Cibersegurança', 'Desenvolvimento Mobile', 'Análise de Dados', 'Engenharia de Dados'],
+            correctAnswer: 'Desenvolvimento Mobile'
         },
         {
-            image: '../Imagens_PP/js.jpg',
-            question: 'Qual é a linguagem de programação mais usada para desenvolvimento de websites?',
-            answers: ['C++', 'JavaScript', 'Excel', 'Python'],
+            question: 'Qual profissão se dedica a proteger sistemas contra ataques cibernéticos?',
+            answers: ['Desenvolvedor Front-end', 'Cientista de Dados', 'Administrador de Redes', 'Especialista em Cibersegurança'],
+            correctAnswer: 'Especialista em Cibersegurança'
+        },
+        {
+            question: 'Qual linguagem é muito usada para desenvolvimento de sites?',
+            answers: ['Python', 'JavaScript', 'Java', 'SQL'],
             correctAnswer: 'JavaScript'
         },
         {
-            image: '../Imagens_PP/bluetooth.jpg',
-            question: 'O que é Bluetooth?',
-            answers: ['Uma marca de refrigerantes', 'Uma tecnologia de conexão sem fio', 'Um tipo de música', 'Uma rede social'],
-            correctAnswer: 'Uma tecnologia de conexão sem fio'
+            question: 'Qual curso é mais focado em desenvolvimento de sistemas e software?',
+            answers: ['Engenharia de Software', 'Engenharia Civil', 'Ciência de Dados', 'Psicologia'],
+            correctAnswer: 'Engenharia de Software'
         },
         {
-            image: '../Imagens_PP/email.jpg',
-            question: 'O que é um e-mail?',
-            answers: ['Um animal de estimação', 'Uma caixa de correspondências', 'Uma mensagem eletrônica enviada pela internet', 'Um prato de comida'],
-            correctAnswer: 'Uma mensagem eletrônica enviada pela internet'
+            question: 'Qual área é responsável pela análise e visualização de grandes volumes de dados?',
+            answers: ['Engenharia de Software', 'Desenvolvimento Back-end', 'Data Science', 'Redes de Computadores'],
+            correctAnswer: 'Data Science'
         },
         {
-            image: '../Imagens_PP/placamae.jpg',
-            question: 'Identifique a imagem abaixo:',
-            answers: ['Processador', 'Placa Pai', 'Placa Mãe', 'Chipset'],
-            correctAnswer: 'Placa Mãe'
+            question: 'Quem desenvolve e gerencia sistemas de bancos de dados?',
+            answers: ['Desenvolvedor Front-end', 'Administrador de Banco de Dados', 'Engenheiro de Software', 'Especialista em DevOps'],
+            correctAnswer: 'Administrador de Banco de Dados'
         },
         {
-            image: '../Imagens_PP/processador.jpg',
-            question: 'Identifique a imagem abaixo:',
-            answers: ['Memória RAM', 'Processador', 'Placa Mãe', 'Chipset'],
-            correctAnswer: 'Processador'
+            question: 'Qual curso seria recomendado para quem deseja trabalhar com Inteligência Artificial?',
+            answers: ['Engenharia de Produção', 'Ciência da Computação', 'Publicidade e Propaganda', 'Administração'],
+            correctAnswer: 'Ciência da Computação'
         },
         {
-            image: '../Imagens_PP/ram.jpg',
-            question: 'Identifique a imagem abaixo:',
-            answers: ['Memória RAM', 'Placa de Video', 'SSD', 'VRM'],
-            correctAnswer: 'Memória RAM'
+            question: 'O que faz um programador?',
+            answers: ['Conserta computadores','Cria e escreve código para aplicativos e sistemas','Desenha layouts para sites','Gerencia redes de computadores'],
+            correctAnswer: 'Cria e escreve código para aplicativos e sistemas'
         },
         {
-            image: '../Imagens_PP/gabinete.jpg',
-            question: 'Identifique a imagem abaixo:',
-            answers: ['CPU', 'Gabinete', 'Box', 'PC'],
-            correctAnswer: 'Gabinete'
+            question: 'Qual das áreas abaixo lida com a criação de conteúdo visual para sites e aplicativos?',
+            answers: ['Desenvolvimento Back-end','Web Design','DevOps','Administração de Redes'],
+            correctAnswer: 'Web Design'
         },
-        {
-            image: '../Imagens_PP/fan.png',
-            question: 'Identifique a imagem abaixo:',
-            answers: ['Fan', 'Cooler', 'Ventilador', 'Hélice'],
-            correctAnswer: 'Fan'
-        },
-        {
-            image: '../Imagens_PP/fonteatx.jpg',
-            question: 'Identifique a imagem abaixo:',
-            answers: ['Fonte ATX', 'Estabilizador', 'Condutor elétrico', 'Chipset'],
-            correctAnswer: 'Fonte ATX'
-        },
-        {
-            image: '../Imagens_PP/SSD.jpg',
-            question: 'O que significa SSD?',
-            answers: ['Solid State Driver', 'Sistema de Segurança Digital', 'Serviço de Streaming de Dados', 'Super Sistema de Download'],
-            correctAnswer: 'Solid State Driver'
-        },
-        {
-            image: '../Imagens_PP/watercooler.jpg',
-            question: 'Identifique a imagem abaixo:',
-            answers: ['Processador', 'Air Cooler', 'Water Cooler', 'Cano de Resfriamento'],
-            correctAnswer: 'Water Cooler'
-        },
-        {
-            image: '../Imagens_PP/firewall.jpg',
-            question: 'O que é firewall?',
-            answers: ['Proteção de rede', 'Programa de edição', 'Dispositivo de cozinha', 'Estilo de dança'],
-            correctAnswer: 'Proteção de rede'
-        },
-        {
-            image: '../Imagens_PP/rammemory.jpg',
-            question: 'O que é RAM?',
-            answers: ['Memória de acesso aleatório', 'Rádio AM', 'Refrigerante', 'Moda'],
-            correctAnswer: 'Memória de acesso aleatório'
-        },
-        {
-            image: '../Imagens_PP/BjarneStroustrup.jpg',
-            question: 'Qual é o criador da linguagem de programação C++?',
-            answers: ['Dennis Ritchie', 'Bjarne Stroustrup', 'Guido van Rossum', 'James Gosling'],
-            correctAnswer: 'Bjarne Stroustrup'
-        },
-        {
-            image: '../Imagens_PP/linux.jpg',
-            question: 'Quem é o criador do kernel do Linux?',
-            answers: ['Linus Torvalds', 'Richard Stallman', 'Andrew Tanenbaum', 'Mark Shuttleworth'],
-            correctAnswer: 'Linus Torvalds'
-        },
-        {
-            image: '../Imagens_PP/github.jpg',
-            question: 'Qual é a plataforma mais popular para hospedar projetos de código aberto?',
-            answers: ['GitLab', 'Bitbucket', 'SourceForge', 'GitHub'],
-            correctAnswer: 'GitHub'
-        },
-        {
-            image: '../Imagens_PP/python.jpg',
-            question: 'Qual é a filosofia principal por trás da linguagem de programação Python?',
-            answers: ['Zen do Python', 'Princípios de Python', 'Doutrina Pythonista', 'Código Pythonico'],
-            correctAnswer: 'Zen do Python'
-        },
-        {
-            image: '../Imagens_PP/bitcoin.jpg',
-            question: 'O que é Bitcoin?',
-            answers: ['Uma rede social', 'Uma criptomoeda', 'Um tipo de malware', 'Um sistema operacional'],
-            correctAnswer: 'Uma criptomoeda'
-        },
-        {
-            image: '../Imagens_PP/sql.jpg',
-            question: 'Qual é a finalidade do SQL?',
-            answers: ['Linguagem de programação', 'Sistema operacional', 'Gestão de banco de dados', 'Editor de texto'],
-            correctAnswer: 'Gestão de banco de dados'
-        }
+        
+        
     ],
-    confirmationMessages : [
+    confirmationMessages: [
         'Correto!',
         'Impressionante!',
         'Excelente!',

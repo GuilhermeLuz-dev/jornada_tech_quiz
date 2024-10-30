@@ -30,7 +30,6 @@ async function updatedRaking() {
 }
 
 async function getDocsForName(name) {
-    console.log(name);
     const nameQuery = query(refCollection, where("nome", "==", name));
     const namesList = await getDocs(nameQuery);
 
@@ -46,12 +45,9 @@ async function checkUserNameExists(name) {
 
     const namesList = await getDocsForName(name);
 
-    console.log(namesList.length);
     if (!namesList.length) {
-        console.log("nome livre");
         return false;
     } else {
-        console.log('nome ocupado')
         return true;
     }
 }
@@ -60,13 +56,11 @@ async function storePlayData(playerName, playerScore) {
     checkUserNameExists(playerName).then(async result => {
         if (result) {
             resetScore(playerName, playerScore);
-            console.log("dados atualizados");
         } else {
             await addDoc(refCollection, {
                 nome: playerName,
                 pontos: parseInt(playerScore)
             })
-            console.log("novos dados adicionados ao banco");
         }
     })
     updatedRaking();

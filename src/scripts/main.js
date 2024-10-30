@@ -14,7 +14,7 @@ document.getElementById('playerName').textContent = localStorage.getItem('player
 // Variáveis do jogo
 const playerName = localStorage.getItem("playerName");
 
-let timeLeft = 15;
+// let timeLeft = 15;
 let totalQuestions = 0;
 let currentQuestions = [];
 let currentQuestionIndex = 0;
@@ -39,7 +39,7 @@ function shuffleAnswers(answers) {
 
 // Função para carregar as próximas 3 perguntas
 function loadNextQuestions() {
-  currentQuestions = data.questions.slice(0, 3);
+  currentQuestions = data.questions.slice(0, 5);
   totalQuestions = currentQuestions.length;
   shuffleQuestions();
   loadNextQuestion();
@@ -91,7 +91,6 @@ function checkAnswer(answer) {
   let isErrorMessage = false;
 
   if (answer === currentQuestion.correctAnswer) {
-    console.log(answer);
     score += Math.round((timeLeft / 15) * 100); // Aumenta o contador de acertos se a resposta for correta
     confirmationMessage = data.confirmationMessages[Math.floor(Math.random() * data.confirmationMessages.length)];
     // Use uma imagem de acerto
@@ -121,7 +120,8 @@ function checkAnswer(answer) {
   scoreElement.textContent = score;
 
   // Exibir confirmação com estilo de cor
-  descriptionContainer.innerHTML = `<h2 style="color: ${isErrorMessage ? 'red' : 'green'};">${confirmationMessage}</h2>`;
+
+  descriptionContainer.innerHTML = `<h2 style="background: ${isErrorMessage ? 'red' : 'green'}; padding:10px">${confirmationMessage}</h2>`;
 
   // Aguardar por alguns segundos antes de exibir a próxima pergunta
   setTimeout(() => {
@@ -136,7 +136,7 @@ function checkAnswer(answer) {
 
     descriptionContainer.innerHTML = ''; // Limpar a descrição
     loadNextQuestion();
-  }, 2000); // Tempo em milissegundos (4 segundos)
+  }, 1000); // Tempo em milissegundos (4 segundos)
 }
 
 

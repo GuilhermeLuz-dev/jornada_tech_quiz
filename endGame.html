@@ -5,73 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../Imagens_PP/decode.png">
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #3b136b;
-            margin: 0;
-            padding: 0;
-        }
-
-        .won-container {
-            text-align: center;
-            margin-top: 50px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .congratulations {
-            color: #4caf50;
-            font-size: 18px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
-        .back-to-index {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #4caf50;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .back-to-index:hover {
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-            transform: translateY(3px);
-        }
-
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
-    <title>Parabéns!</title>
+    <link rel="stylesheet" href="./src/styles/endGame.css">
+    <link rel="stylesheet" href="./src/styles/quiz.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Ranking</title>
 </head>
 
 <body>
-    <div class="won-container">
-        <h1>Parabéns, <span id="playerName"></span>!</h1>
-        <p>Pontuação: <span id="playerScore"></span></p>
-        <p class="congratulations">Você concluiu o desafio com sucesso! Pegue seu prêmio!!</p>
-        <button id="restart" class="restart">Voltar para o Início</button>
-        <button id="tryAgain" class="restart">Tentar Novamente</button>;
-        <ul id="ranking">
-        </ul>
-    </div>
-
-
+    <header>
+        <div class="container">
+            <h1>The End</h1>
+            <div class="container-playerName">
+                <i class='bx bxs-user'></i>
+                <h2 id="playerName"></h2>
+            </div>
+        </div>
+    </header>
+    <section id="resultGame">
+        <div class="container-result">
+            <h1 id="result-message"><span class="congratulations"></span>!</h1>
+            <p>Pontuação:</p>
+            <span id="playerScore"></span>
+            <div class="result">Novo record</div>
+            <div class="result-ranking-container">Você ficou em <span class="result-ranking"></span>º lugar</div>
+            <div class="result-buttons">
+                <button id="restart" class="restart">Reset</button>
+                <button id="tryAgain" class="restart">Tentar Novamente</button>
+            </div>
+        </div>
+        <div class="ranking-container">
+            <h2>Ranking</h2>
+            <ul id="ranking">
+                <div class="circle-loading"></div>
+            </ul>
+        </div>
+    </section>
     <script type="module" src="./src/scripts/endGame.js"></script>
-</body> -->
+</body>
 
 </html>

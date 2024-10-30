@@ -5,38 +5,68 @@
 }
 
 body {
+    background: linear-gradient(150deg,#5e1670, 30%, #001063, #000);
+    background-repeat: no-repeat;
     font-family: "Poppins", sans-serif;
-    background-color: #3b136b;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
     position: relative;
-    background-image: url('../assets/backgroundTech.jpg');
-    background-size: cover;
+}
+
+.content {
+    max-width: 1024px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
 }
 
 .title {
     font-family: "Poppins", sans-serif;
-    font-size: 68px;
     color: #fff;
-    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.title h1 {
+    color: #872a9e;
+    font-size: 50px;
+}
+
+.title p {
+    color: #038cb9;
+    font-size: 20px;
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.205);
-    backdrop-filter: blur(5px);
+    height: 70vh;
+    background-image: url('../assets/backgroundTech.jpg');
+    background-size: cover;
+    background-position: bottom;
     border-radius: 10px;
-    padding: 20px;
+    padding: 50px 10px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     max-width: 400px;
     width: 100%;
 }
 
-.user_icon{
+.container h1 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.container p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.user_icon {
     color: #fff;
     font-size: 40px;
 }
@@ -58,11 +88,11 @@ input[type="text"] {
     margin: 10px 0;
     text-align: center;
     font-size: 20px;
-    
+
 }
 
 .play-button {
-    background-color: #3b136b;
+    background-color: #0099cc;
     color: white;
     border: none;
     border-radius: 10px;
@@ -84,20 +114,21 @@ input[type="text"] {
 }
 
 .footer {
-    color: white;
+    color: #fff;
     text-align: center;
     padding: 10px;
     font-size: 16px;
     position: absolute;
-    bottom: 0; 
-    width: 100%; 
+    bottom: 0;
+    width: 100%;
 }
 
-@media screen and (max-width: 767px){
-    .title{
-        font-size:30px;
+@media screen and (max-width: 767px) {
+    .title {
+        font-size: 30px;
     }
-    .container{
+
+    .container {
         max-width: 300px;
     }
 }
