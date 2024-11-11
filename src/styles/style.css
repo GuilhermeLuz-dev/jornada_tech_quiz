@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(150deg,#5e1670, 30%, #001063, #000);
+    background: linear-gradient(150deg, #5e1670, 30%, #001063, #000);
     background-repeat: no-repeat;
     font-family: "Poppins", sans-serif;
     display: flex;
@@ -17,12 +17,74 @@ body {
     position: relative;
 }
 
+.title{
+    color: #fff;
+    padding: 10px 0;
+}
+
+.ranking-container {
+    color: #fff;
+    max-width: 100%;
+    width: 400px;
+    margin-bottom: 10px;
+}
+.ranking-container h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#ranking {
+    list-style: none;
+}
+
+.circle-loading {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #ddd;
+    border-radius: 50%;
+    border-top-color: #A865FF;
+    animation: spin 1s ease infinite;
+    margin: 25% auto;
+}
+#ranking li {
+    width: 100%;
+    background-color: #A865FF;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px 30px;
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+#ranking li:nth-child(1) {
+    background-color: #01951C;
+}
+
+#ranking li:nth-child(2) {
+    background-color: #3EB554;
+}
+
+#ranking li:nth-child(3) {
+    background-color: #77B482;
+}
+
+#ranking li span span {
+    margin-right: 15px;
+}
+
+
 .content {
+    display: flex;
     max-width: 1024px;
     width: 100%;
     display: flex;
-    justify-content: center;
-
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
 }
 
 .title {
@@ -92,7 +154,9 @@ input[type="text"] {
 }
 
 .play-button {
-    background-color: #0099cc;
+    background-color: #721AAE;
+    text-transform: uppercase;
+    font-weight: bold;
     color: white;
     border: none;
     border-radius: 10px;
@@ -118,8 +182,6 @@ input[type="text"] {
     text-align: center;
     padding: 10px;
     font-size: 16px;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
@@ -129,6 +191,12 @@ input[type="text"] {
     }
 
     .container {
-        max-width: 300px;
+        max-width: 90%;
+    }
+
+    .content{
+        padding: 20px 0;
+        flex-direction: column;
+        align-items: center;
     }
 }
